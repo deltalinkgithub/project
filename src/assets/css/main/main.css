@@ -1,0 +1,19 @@
+#main{
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+#search-page .box-card{
+    position:relatve;
+    background-color: rgb(235, 223, 223);
+}
+
+#search-page .box-card #title{
+    font-size: 35px;
+}
+
+#search-page .box-card .button{
+    position:position;
+    right:100px;
+}
+
+
