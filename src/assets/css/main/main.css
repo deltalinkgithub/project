@@ -7,7 +7,7 @@
     right:0px;
     top:0px;
     width:100%;
-    background-color: rgb(60, 211, 30);
+    background-color: rgb(119, 247, 252);
 }
 
 #search-page .box-card #title{
@@ -21,10 +21,9 @@
     font-size:50px;
 }
 
-#search-page .box-card #icon-block .icon-user{
-    position:relative;
+#search-page .box-card #icon-block #cart{
+    position:absolute;
     right:0px;
-    font-size:50px;
 }
 
 #search-page .box-card #icon-block .icon-user{
@@ -38,13 +37,6 @@
     top:25%;
     right:10%;
     width:30%;
-}
-
-#search-page .box-card #tag-block .el-button{
-    color:black;
-    font-weight:bold;
-    margin-left:10%;
-    font-size:20px;
 }
 
 
