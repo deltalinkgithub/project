@@ -3,17 +3,48 @@
 }
 
 #search-page .box-card{
-    position:relatve;
-    background-color: rgb(235, 223, 223);
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:100%;
+    background-color: rgb(60, 211, 30);
 }
 
 #search-page .box-card #title{
     font-size: 35px;
 }
 
-#search-page .box-card .button{
-    position:position;
-    right:100px;
+#search-page .box-card #icon-block{
+    position:absolute;
+    top:15%;
+    right:3%;
+    font-size:50px;
+}
+
+#search-page .box-card #icon-block .icon-user{
+    position:relative;
+    right:0px;
+    font-size:50px;
+}
+
+#search-page .box-card #icon-block .icon-user{
+    position:relative;
+    right:20%;
+    font-size:50px;
+}
+
+#search-page .box-card #tag-block{
+    position:absolute;
+    top:25%;
+    right:10%;
+    width:30%;
+}
+
+#search-page .box-card #tag-block .el-button{
+    color:black;
+    font-weight:bold;
+    margin-left:10%;
+    font-size:20px;
 }
 
 
