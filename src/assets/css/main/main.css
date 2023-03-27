@@ -7,7 +7,9 @@
     right:0px;
     top:0px;
     width:100%;
-    background-color: rgb(119, 247, 252);
+    background-color: rgba(119, 248, 252, 0.637);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    border:0px;
 }
 
 #search-page .box-card #title{
