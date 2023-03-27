@@ -1,14 +1,24 @@
 <template>
     <span class="icon-cart">
         <span class="circle">
-            <span id="cart-text">123</span>
+            <span id="cart-text" v-if="counts<100">{{ counts }}</span>
+            <span id="cart-text" v-else>99+</span>
         </span>
         <div id="cart-name">購物車</div>
     </span>
 </template>
+<script>
+    export default {
+        props: {
+            counts:String
+        }
+}
+</script>
 <style>
     .icon-cart:hover{
         color:rgb(248, 242, 242);
+        cursor: pointer;
+        user-select: none;
     }
 
     .circle{
