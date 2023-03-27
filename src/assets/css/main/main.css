@@ -2,7 +2,7 @@
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
 
-#search-page .box-card{
+#top-list .box-card{
     position:absolute;
     right:0px;
     top:0px;
@@ -13,29 +13,29 @@
     border:0px;
 }
 
-#search-page .box-card #title{
+#top-list .box-card #title{
     font-size: 35px;
 }
 
-#search-page .box-card #icon-block{
+#top-list .box-card #icon-block{
     position:absolute;
     top:15%;
     right:3%;
     font-size:50px;
 }
 
-#search-page .box-card #icon-block #cart{
+#top-list .box-card #icon-block #cart{
     position:absolute;
     right:0px;
 }
 
-#search-page .box-card #icon-block .icon-user{
+#top-list .box-card #icon-block .icon-user{
     position:relative;
     right:20%;
     font-size:50px;
 }
 
-#search-page .box-card #tag-block{
+#top-list .box-card #tag-block{
     position:absolute;
     top:25%;
     right:10%;
