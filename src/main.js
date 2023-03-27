@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import './plugins/element.js'
 import "@/assets/css/main/icomoon/style.css"
-import {Tag,Cart} from '@/components/main';
+import {Tag,Cart} from './components/main';
 
 Vue.config.productionTip = false
 Vue.component('jin-tag', Tag);
