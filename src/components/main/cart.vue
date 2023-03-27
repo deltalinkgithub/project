@@ -12,7 +12,7 @@
         props: {
             counts:String
         }
-}
+    }
 </script>
 <style>
     .icon-cart:hover{
