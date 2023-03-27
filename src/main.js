@@ -3,11 +3,12 @@ import App from './App.vue'
 import router from './router'
 import './plugins/element.js'
 import "@/assets/css/main/icomoon/style.css"
-import {Tag,Cart} from './components/main';
+import {Tag,Cart,MainPage} from './components/main';
 
 Vue.config.productionTip = false
 Vue.component('jin-tag', Tag);
 Vue.component('jin-cart', Cart);
+Vue.component('jin-page', MainPage);
 
 new Vue({
   router,
