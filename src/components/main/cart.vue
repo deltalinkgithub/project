@@ -1,8 +1,11 @@
 <template>
     <span class="icon-cart">
-        <span class="circle">
+        <span class="circle" v-if="counts>0">
             <span id="cart-text" v-if="counts<100">{{ counts }}</span>
             <span id="cart-text" v-else>99+</span>
+        </span>
+        <span v-else>
+            <span id="cart-text"></span>
         </span>
         <div id="cart-name">購物車</div>
     </span>
