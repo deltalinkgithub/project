@@ -6,7 +6,7 @@
                 <!-- <a href="https://www.flaticon.com/free-icons/login" title="login icons">icons created by srip - Flaticon</a> -->
                 <div id="icon-block">
                     <!-- <span class="icon-user"></span> -->
-                    <jin-cart id="cart" counts="120"></jin-cart>
+                    <jin-cart id="cart" counts="1"></jin-cart>
                 </div>
                 <div id="tag-block">
                     <jin-tag>首頁</jin-tag>
