@@ -1,6 +1,6 @@
 <template>
     <div id="main">
-        <div id="search-page">
+        <div id="top-list">
             <el-card class="box-card">
                 <span id="title">JIN'S 購物天堂</span>
                 <!-- <a href="https://www.flaticon.com/free-icons/login" title="login icons">icons created by srip - Flaticon</a> -->
