@@ -15,8 +15,10 @@
                 </div>
             </el-card>
         </div>
+        <div id="main-photo">
+            <jin-page></jin-page>
+        </div>
     </div>
 </template>
-<script>
-</script>
+<script src="@/assets/script/main/main_page.js"></script>
 <style src="@/assets/css/main/main.css"></style>
