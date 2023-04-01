@@ -46,9 +46,11 @@
         position:absolute;
         top:0px;
         right:0px;
-        height:20px;
+        height:21px;
         background-color: rgb(128, 156, 235);
-        border:1px solid rgb(0, 0, 0);
+        border-top:1px solid rgb(0, 0, 0);
+        border-left:1px solid rgb(0, 0, 0);
+        border-right:1px solid rgb(0, 0, 0);
         padding:18px 30px;
     }
 
@@ -72,7 +74,7 @@
         left:0px;
         height:9%;
         width:300px;
-        border:2px solid blue;
+        border:2px solid rgb(0, 0, 0);
         background-color: rgba(128, 157, 235, 0.418);
     }
 
