@@ -31,7 +31,9 @@
         },
         methods:{
             animate_enable(){
-                this.enable=true
+                setTimeout(() => {
+                    this.enable=true;
+                }, 500);
             }
         },
         mounted(){
