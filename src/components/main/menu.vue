@@ -1,28 +1,41 @@
 <template>
-    <el-card class="box-card">
-        <div slot="header">
-            <span><slot></slot></span>
-        </div>
-        <div id="body">
-            <span class="item-block">
-                123
-            </span>
-            <span class="item-block">
-                123
-            </span>
-            <span class="item-block">
-                123
-            </span>
-        </div>
-    </el-card>
+    <transition name="slide">
+        <el-card class="box-card" v-show="enable">
+            <div slot="header">
+                <span><slot></slot></span>
+            </div>
+            <div id="body">
+                <!-- <span class="item-block">
+                    123
+                </span>
+                <span class="item-block">
+                    123
+                </span>
+                <span class="item-block">
+                    123
+                </span> -->
+            </div>
+        </el-card>
+    </transition>
 </template>
 <script>
     export default {
-        data:{
-            a:[{'種類一':['第一項,第二項']},{'種類二':['第一項','第二項']}]
+        data(){
+            return {
+            a:[{'種類一':['第一項,第二項']},{'種類二':['第一項','第二項']}],
+            enable:false
+            };
         },
         props: {
             categorys:Array
+        },
+        methods:{
+            animate_enable(){
+                this.enable=true
+            }
+        },
+        mounted(){
+            this.animate_enable()
         }
     }
 </script>
@@ -35,7 +48,7 @@
     }
 
     .box-card .el-card__header{
-        background-color: rgba(0, 255, 255, 0.548);
+        background-color: rgb(0, 255, 255);
         font-weight:bold;
         text-align: center;
     }
@@ -57,5 +70,18 @@
         width:300px;
         border:2px solid rgb(0, 0, 0);
         background-color: rgba(128, 157, 235, 0.418);
+    }
+    .slide-enter-active,
+    .slide-leave-active {
+        transition: transform 1s;
+    }
+
+    .slide-enter-to,.slide-leave{
+        transform: translateX(0);
+    }
+
+    .slide-enter,
+    .slide-leave-to {
+        transform: translateX(100%);
     }
 </style>
