@@ -52,6 +52,7 @@
     .box-card .el-card__header{
         background-color: rgb(0, 255, 255);
         font-weight:bold;
+        border-bottom:1px solid rgb(0, 255, 255);
         text-align: center;
     }
 
