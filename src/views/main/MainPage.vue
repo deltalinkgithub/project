@@ -15,13 +15,13 @@
                 </div>
             </el-card>
         </div>
-        <div id="main-photo">
-            <jin-page></jin-page>
+            <div id="main-photo">
+                <jin-page></jin-page>
+            </div>
+            <div id="side-menu">
+                <jin-menu>商品選單</jin-menu>
+            </div>
         </div>
-        <div id="side-menu">
-            <jin-menu>商品選單</jin-menu>
-        </div>
-    </div>
 </template>
 <script src="@/assets/script/main/main_page.js"></script>
 <style src="@/assets/css/main/main.css"></style>
