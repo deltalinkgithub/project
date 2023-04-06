@@ -26,8 +26,8 @@
 
     .circle{
         position: absolute;
-        right:-10%;
-        top:-5%;
+        right:-15%;
+        top:-15%;
         width:30px;
         height:30px;
         border-radius:999em;
