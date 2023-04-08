@@ -21,6 +21,11 @@
         <div id="side-menu">
             <jin-menu>全站商品</jin-menu>
         </div>
+        <div id="bottom-list">
+            <el-card class="box-card">
+                <span id="title">use for practice</span>
+            </el-card>
+        </div>
     </div>
 </template>
 <script src="@/assets/script/main/main_page.js"></script>
