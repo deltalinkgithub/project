@@ -82,7 +82,14 @@
         font-size:2em;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.418);
+        cursor: pointer;
+        user-select: none;
     }
+
+    .box-card #body .item-block:hover{
+        background-color: rgba(201, 187, 187, 0.418);
+    }
+
     .slide-enter-active,
     .slide-leave-active {
         transition: transform 1s;
