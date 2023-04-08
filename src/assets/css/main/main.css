@@ -47,10 +47,10 @@
 
 #main-photo{
     position:absolute;
-    top:calc(0% + 65px);
-    right:0%;
-    width: 100%;
-    height:calc(100% - 65px);
+    top:20%;
+    left:20%;
+    width: 500px;
+    height:500px;
 }
 
 #side-menu{
