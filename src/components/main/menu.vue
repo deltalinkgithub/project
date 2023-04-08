@@ -15,6 +15,9 @@
                     123
                 </span> -->
             </div>
+            <div id="menu-bottom">
+                <span>此為練習作品</span>
+            </div>
         </el-card>
     </transition>
 </template>
@@ -44,15 +47,15 @@
 <style>
     .box-card{
         width:300px;
-        height:600px;
-        background-color: rgba(0, 60, 255, 0.404);
-        border:1px solid rgb(0, 0, 0);
+        height:970px;
+        background-color: rgb(255, 255, 255);
+        border:0px solid;
     }
 
     .box-card .el-card__header{
-        background-color: rgb(0, 255, 255);
+        background-color: rgb(255, 255, 255);
         font-weight:bold;
-        border-bottom:1px solid rgb(0, 255, 255);
+        border-bottom:0px solid rgb(0, 255, 255);
         text-align: center;
     }
 
@@ -60,8 +63,13 @@
         position:absolute;
         top:57px;
         left:0px;
+    }
+
+    .box-card #menu-bottom{
+        position:absolute;
+        bottom:0px;
         width:100%;
-        height:90.5%;
+        text-align:center;
     }
 
     .item-block{

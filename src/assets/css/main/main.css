@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(185, 214, 223);
+}
+
 #main{
     font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
 }
@@ -47,15 +51,15 @@
 
 #main-photo{
     position:absolute;
-    top:20%;
-    left:20%;
+    top:200px;
+    left:800px;
     width: 500px;
     height:500px;
 }
 
 #side-menu{
     position:absolute;
-    top:120px;
-    right:5px;
+    top:67px;
+    right:0px;
     overflow:hidden;
 }
