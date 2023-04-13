@@ -5,11 +5,11 @@
                 <span><slot></slot></span>
             </div>
             <div id="body">
-                <span class="item-block" @click="show=false">
-                    <!-- <transition name="arrow"> -->
-                        <!-- <span class="icon-play3" v-if="show" key="t1"></span> -->
-                        <span class="icon-play3"  key="t2"></span>
-                    <!-- </transition> -->
+                <span class="item-block">
+                    <transition name="arrow"  mode="out-in">
+                        <span class="icon-play3" v-if="show" key="t1" @click="show=false"></span>
+                        <span class="icon-play3" v-else key="t2" style="display:block;transform:rotate(90deg)" @click="show=true"></span>
+                    </transition>
                 </span>
             </div>
             <div id="menu-bottom">
