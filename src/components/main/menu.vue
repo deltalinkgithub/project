@@ -5,14 +5,11 @@
                 <span><slot></slot></span>
             </div>
             <div id="body">
-                <span class="item-block">
-                    123
-                </span>
-                <span class="item-block">
-                    123
-                </span>
-                <span class="item-block">
-                    123
+                <span class="item-block" @click="show=false">
+                    <!-- <transition name="arrow"> -->
+                        <!-- <span class="icon-play3" v-if="show" key="t1"></span> -->
+                        <span class="icon-play3"  key="t2"></span>
+                    <!-- </transition> -->
                 </span>
             </div>
             <div id="menu-bottom">
@@ -26,6 +23,7 @@
         data(){
             return {
                 a:[{'種類一':['第一項,第二項']},{'種類二':['第一項','第二項']}],
+                show:true,
                 enable:false
             };
         },
@@ -89,6 +87,9 @@
     .box-card #body .item-block:hover{
         background-color: rgba(201, 187, 187, 0.418);
     }
+    #ninety-deg{
+        transform: rotate(90deg);
+    }
 
     .slide-enter-active,
     .slide-leave-active {
@@ -102,5 +103,22 @@
     .slide-enter,
     .slide-leave-to {
         transform: translateX(100%);
+    }
+
+    .arrow-enter-active,
+    .arrow-leave-active {
+        transition: transform 0.2s;
+        display: block;
+    }
+
+    .arrow-enter-to,.arrow-leave{
+        transform: rotate(0deg);
+        display: block;
+    }
+
+    .arrow-enter,
+    .arrow-leave-to {
+        transform: rotate(90deg);
+        display: block;
     }
 </style>
