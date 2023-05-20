@@ -5,13 +5,12 @@
                 <span><slot></slot></span>
             </div>
             <div id="body">
-                <span class="item-block" @click="show=!show">
-                    <transition name="arrow"  mode="out-in">
-                        <span class="icon-play3" v-if="show" key="i1"></span>
-                        <span class="icon-play3" v-else key="i2" style="display:block;transform:rotate(90deg);"></span>
-                    </transition>
-                    <span style="position:absolute;left:30px">123</span>
-                    <p>222</p>
+                <span class="item-block" @click="item_extend()">
+                        <transition name="arrow"  mode="out-in">
+                            <span class="icon-play3" v-if="show" key="i1"></span>
+                            <span class="icon-play3" v-else key="i2" style="display:block;transform:rotate(180deg);"></span>
+                        </transition>
+                        <span style="position:absolute;left:30px">123</span>
                 </span>
             </div>
             <div id="menu-bottom">
@@ -37,7 +36,7 @@
                 setTimeout(() => {
                     this.enable=true;
                 }, 100);
-            }
+                }
         },
         mounted(){
             this.animate_enable()
@@ -120,7 +119,7 @@
 
     .arrow-enter-active,
     .arrow-leave-active {
-        transition: transform 0.1s;
+        transition: transform 0.5s;
         display: block;
     }
 
@@ -131,7 +130,7 @@
 
     .arrow-enter,
     .arrow-leave-to {
-        transform: rotate(90deg);
+        transform: rotate(180deg);
         display: block;
     }
 </style>
