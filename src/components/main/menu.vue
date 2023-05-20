@@ -5,11 +5,13 @@
                 <span><slot></slot></span>
             </div>
             <div id="body">
-                <span class="item-block">
+                <span class="item-block" @click="show=!show">
                     <transition name="arrow"  mode="out-in">
-                        <span class="icon-play3" v-if="show" key="t1" @click="show=false"></span>
-                        <span class="icon-play3" v-else key="t2" style="display:block;transform:rotate(90deg)" @click="show=true"></span>
+                        <span class="icon-play3" v-if="show" key="i1"></span>
+                        <span class="icon-play3" v-else key="i2" style="display:block;transform:rotate(90deg);"></span>
                     </transition>
+                    <span style="position:absolute;left:30px">123</span>
+                    <p>222</p>
                 </span>
             </div>
             <div id="menu-bottom">
@@ -34,7 +36,7 @@
             animate_enable(){
                 setTimeout(() => {
                     this.enable=true;
-                }, 500);
+                }, 100);
             }
         },
         mounted(){
@@ -51,7 +53,7 @@
     }
 
     .box-card .el-card__header{
-        background-color: rgb(255, 255, 255);
+        background-color: rgba(230, 220, 220, 0.418);
         font-weight:bold;
         border-bottom:0px solid rgb(0, 255, 255);
         text-align: center;
@@ -76,9 +78,10 @@
         display: inline-block;
         position:relative;
         left:0px;
+        height:1em;
         width:100%;
         font-size:2em;
-        text-align: center;
+        text-align: left;
         background-color: rgba(255, 255, 255, 0.418);
         cursor: pointer;
         user-select: none;
@@ -87,6 +90,16 @@
     .box-card #body .item-block:hover{
         background-color: rgba(201, 187, 187, 0.418);
     }
+
+    .box-card #body .item-block .icon-play3{
+        display: inline-block;
+        position:absolute;
+        left:0px;
+        height:30px;
+        width:30px;
+        text-align: left;
+    }
+
     #ninety-deg{
         transform: rotate(90deg);
     }
@@ -107,7 +120,7 @@
 
     .arrow-enter-active,
     .arrow-leave-active {
-        transition: transform 0.2s;
+        transition: transform 0.1s;
         display: block;
     }
 
