@@ -28,11 +28,8 @@
 </script>
 <style>
     #photo-main{
-        position:absolute;
-        top:0;
-        padding: 0%;
-        width: 100%;
-        height: 100%;
+        width: 30vw;
+        height: 50vh;
     }
 
     .fade-enter-active,

@@ -5,12 +5,12 @@
                 <span><slot></slot></span>
             </div>
             <div id="body">
-                <span class="item-block" @click="item_extend()">
+                <span class="item-block" @click="show = !show">
                         <transition name="arrow"  mode="out-in">
                             <span class="icon-play3" v-if="show" key="i1"></span>
                             <span class="icon-play3" v-else key="i2" style="display:block;transform:rotate(180deg);"></span>
                         </transition>
-                        <span style="position:absolute;left:30px">123</span>
+                        <span style="position:absolute;left:30px;top:-7px">apple3rd</span>
                 </span>
             </div>
             <div id="menu-bottom">
@@ -18,6 +18,9 @@
             </div>
         </el-card>
     </transition>
+    <!-- <el-card class="box-card">
+
+    </el-card> -->
 </template>
 <script>
     export default {
@@ -46,7 +49,7 @@
 <style>
     .box-card{
         width:300px;
-        height:910px;
+        height:calc(100vh - 130px);
         background-color: rgb(255, 255, 255);
         border:0px solid;
     }
@@ -119,7 +122,7 @@
 
     .arrow-enter-active,
     .arrow-leave-active {
-        transition: transform 0.5s;
+        transition: transform 0.3s;
         display: block;
     }
 
