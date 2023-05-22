@@ -5,7 +5,7 @@
                 <span><slot></slot></span>
             </div>
             <div id="body">
-                <span class="item-block" @click="show = !show">
+                <span class="item-block" @mouseover="show = !show"  @mouseout="show = !show">
                         <transition name="arrow"  mode="out-in">
                             <span class="icon-play3" v-if="show" key="i1"></span>
                             <span class="icon-play3" v-else key="i2" style="display:block;transform:rotate(180deg);"></span>

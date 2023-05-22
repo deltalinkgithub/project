@@ -14,8 +14,5 @@ Vue.component('jin-menu', Menu);
 new Vue({
   router,
   render: h => h(App),
-  components:{
-    'jin-tag':Tag,
-    'jin-cart':Cart
-  }
+  components:{}
 }).$mount('#app')
